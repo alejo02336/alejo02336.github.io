@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --primary-color: #3a0ca3;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.segundo-menu{
+display: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav{
+    background: var(--primary-color);    
+    width: 100%;
+    line-height: 80px;    
+}
+
+.img-pixel{
+    color: white;
+    font-size: 35px;      
+    font-weight: bold;
+    width: 60px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    border-radius: 50%;
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;  
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background: turquoise;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 70px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media  (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+
+
+}
+
+.videos-div{
+    display: flex; 
+    justify-content: space-around;
+     flex-wrap: wrap; 
+     margin-top: 2%; 
+    
+}
+.videos-div video{
+ width: 400px;
+}
+
+@media  (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    .menu-opciones{
+        display: none;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color: slategray;
+    }
+
+    #check:checked ~ .segundo-menu{
+        
+      display: flex;
+      flex-flow: column;   
+      text-align: center; 
+    }
+
+    .segundo-menu a{
+        
+        width: 100%;
+        padding: 5px 0;
+        text-decoration: none;
+        color: white;
+        background-color: brown;
+        border: black;
+        border-width: 2px;
+        border-style: solid;
+        transition: 0.3s;
+        
+    }
+
+    .segundo-menu a:hover{
+        opacity: 1;
+        background-color: #3e8e41;
+        color: white;
+    }
+
+
+    .videos-div video{
+        width: 320px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+     background-color: black;
+    color: white; 
+}
+.cabecera {
+    display: flex;
+    flex-flow: wrap ;
+    justify-content: space-around;
+    background-image: url('assets/fondoperro.png');
+    background-size: cover;
+    height: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    
+}
+
+.cabecera img {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+}
+
+.imagen-fondo{
+    position: absolute;
+}
+
+.cabecera-texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 350%;
+    color: white;
+}
+
+h2 { 
+    color: white;
+}
+
+body{
+    /* background-image: url('assets/fondoperro.png'); */
+    
+    /*
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    background-color: cadetblue;
+    
+    */
+}
+
+.todo {
+
+    /*
+    background-color: wheat;
+    padding: 5%;
+    border-radius: 1%;
+    */
+    margin: 20px;
+}
+
+
+
+
+.info {
+    text-align: end;
+}
+
+.logo-uao {
+    width: 150px;
+}
+
+.comfandi {
+    width: 150px;
+    margin-right: 4%;
+}
+
+.platzi {
+    width: 150px;
+}
+
+
+
+
+.descripcion {
+    background-color: var(--primary-color);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+
+
+/*
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 300px;
+}
+
+.container  div {
+    width: 33%;
+    text-align: center;
+}
+
+*/
+
+
+.li-imagen{
+    display: flex;
+    align-items: center;
+}
+
+
+.contendor-sliders{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+/* CODIGO DE INTERNET :v */
+
+.slider{
+    width: 100%;
+
+    height: auto;
+    overflow: hidden;
+  }
+  .slider ul{
+      display: flex;
+      align-items: center;
+      animation: cambio 15s infinite linear;
+      width: 400%;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 100%;
+      
+      height: auto;
+      
+  }
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.footer-icons {
+    margin-top: 12px;
+    width: 3%;
+}
+
+/*
+@media only screen and (min-width:320px) and (max-width:768px){
+  .slider, .slider ul, .slider img{
+      height: 100vh;
+    }
+}
+*/
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;   
+    background:rgba(255,255,255,.4);
+    border-radius: 4px;
+}
+::-webkit-scrollbar:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar:hover:active {
+    background: #999;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        height: 10vh;
+    }
+
+    header > a {
+        font-weight: 300;
+        font-size: 12px;
+    }    
+
+    .footer-icons {
+        width: 5%;
+    }
+}
+
+.about,.skills,
+.education,
+.contact,.experience{
+    padding: 40px;
+    min-height: 330px;
+}
+
+
+.education,
+.contact,.experience{
+    margin-top: 30px;
+}
+
+.about{
+background: white;
+}
+
+.skills{
+    background: #3366cc;
+    color: #f5f5f5;
+    
+}
+
+.skills .progress{
+    border-radius: 0px;
+    height: 4px;
+}
+
+.skills .progress .progress-bar-primary{
+    background: #204090;
+}
+
+
+.skills strong{
+    display: inline-block;
+    font-weight: normal;
+    padding-bottom: 6px;
+}
+
+.education{
+    background: #3366cc;
+    color: #f5f5f5;
+}
+
+
+.education .education-content{
+    padding-bottom: 14px;
+}
+
+.education h5{
+    display: inline-block;
+}
+
+.education span{
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.languages{
+    background: white;
+    margin-top: 27px;
+}
+
+
+
+
+
+.contact{
+    background: white;
+}
+
+.experience{
+    color: #f5f5f5;
+    background: #3366cc;
+}
+
+.experience-content{
+    padding-bottom: 14px;
+}
+
+.experience h5{
+    display: inline-block;
+}
+
+.experience span{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+
+/*  Para el slider*/
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+    display: flex;
+    align-items: center;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
